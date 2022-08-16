@@ -3,7 +3,7 @@ import './login.css'
 import { UserContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 
-const login = () => {
+const Login = () => {
 	const navigate=useNavigate();
 	const{user,setUser} = useContext(UserContext);
 	const [fields, setFields] = useState({ email: "", password: "" });
@@ -37,9 +37,7 @@ const login = () => {
 		}
 		if (res.status === 200) {
 			alert(data.message);
-			console.log(user)
 			setUser(true);
-			console.log(user);
 			navigate('/')
 			
 		}
@@ -78,4 +76,4 @@ const login = () => {
 	)
 }
 
-export default login
+export default Login
