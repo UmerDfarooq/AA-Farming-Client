@@ -39,7 +39,7 @@ function App() {
         setUser(true);
       }
 }
-  useEffect(()=>{getData(),[]})
+  useEffect(()=>{getData()},[])
   return (
 <Router>
 
