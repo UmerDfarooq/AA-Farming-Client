@@ -22,7 +22,7 @@ const navigate = useNavigate();
     };
 
     const logout = async()=>{
-        const res = await fetch("http://localhost:5000/admin/logout", {
+        const res = await fetch("https://aa-cattle-farm.herokuapp.com/admin/logout", {
             method: "GET",
             headers: {
               Accept:"applicatio/json",
@@ -32,7 +32,7 @@ const navigate = useNavigate();
           });
           if(res.status===200 || res.status===304){
             setUser(false);
-            navigate('/Login')
+            navigate('/')
           }
     }
     if(user){

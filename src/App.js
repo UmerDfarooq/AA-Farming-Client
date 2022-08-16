@@ -39,7 +39,8 @@ function App() {
         setUser(true);
       }
 }
-  useEffect(()=>{getData()},[])
+  useEffect(()=>{getData()
+  document.title="A&A Farm"},[])
   return (
 <Router>
 
