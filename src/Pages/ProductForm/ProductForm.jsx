@@ -4,6 +4,7 @@ import axios from "axios";
 import { Publish } from "@mui/icons-material";
 import { UserContext } from '../../App';
 import { Link, useNavigate } from 'react-router-dom';
+import FileBase from 'react-file-base64';
 
 const ProductForm = () => {
     const navigate=useNavigate();
@@ -14,9 +15,9 @@ const ProductForm = () => {
     const [file, setFile] = useState("");
     const [onFile, setOnFile] = useState();
 
-    const handleChange = (e)=>{
-        setOnFile(URL.createObjectURL(e.target.files[0]))
-        setFile((e.target.files[0]))
+    const handleChange = (base64)=>{
+        setOnFile(base64)
+        setFile((base64))
         console.log('in here in files');
 }
 
@@ -118,7 +119,7 @@ if(user){
                                                         <label htmlFor="file" >
                                                             <Publish className="userUpdateIcon" /> Upload Product Image
                                                         </label>
-                                                        <input type="file" id="file" onChange={handleChange} style={{ display: "none" }} />
+                                                        <FileBase type="file" multiple={false} onDone={({ base64 }) => {handleChange(base64)}} />
                                                         <img src={onFile} alt="" width="250" height="200" className="imgSrc" />
                                                     </div>
                                                 </div>
