@@ -101,7 +101,7 @@ import GoogleMaps from '../Pages/GoogleMaps/googleMaps'
                               <i><img src={icon1} alt="#" /></i>
                               <div class="choose_text">
                                  <h3>Excellent Service</h3>
-                                 <p>Our Service is highly reliable with products delievered well within time. We take consumer satisfication very highly in every way
+                                 <p>Our Service is highly reliable with products delievered well within time.
 </p>
                               </div>
                            </div>
@@ -111,7 +111,7 @@ import GoogleMaps from '../Pages/GoogleMaps/googleMaps'
                               <i><img src={icon2} alt="#" className='zoom'/></i>
                               <div class="choose_text">
                                  <h3>Clean Working</h3>
-                                 <p>We make cleanliness sure in every step of our production, From the sanitary conditions of the enivornment to the health of our animals to the extraction of our products. Proper Steps ensure no contamination occurs</p>
+                                 <p>We make cleanliness sure in every step of our production.</p>
                               </div>
                            </div>
                         </div>
@@ -129,7 +129,7 @@ import GoogleMaps from '../Pages/GoogleMaps/googleMaps'
                               <i><img src={icon4} alt="#" /></i>
                               <div class="choose_text">
                                  <h3>Expert Farmer</h3>
-                                 <p>Best trained Experts are hired in taking care of  animals, enivorment and fields</p>
+                                 <p>Best trained Experts are hired in taking care of  animals and environment</p>
                               </div>
                            </div>
                         </div>

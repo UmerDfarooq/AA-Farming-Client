@@ -50,13 +50,14 @@ const Login = () => {
 					<h2> Sign in </h2>
 					<form>
 						<label>ENTER EMAIL</label>
-						<input type="email"
+						<input 
+							type="email"
 							name="email"
 							value={fields.email}
 							onChange={handleInput} /><br></br>
 
 						<label>PASSWORD</label>
-						<input className='pass'
+						<input 
 							type="password"
 							name="password"
 							value={fields.password}
