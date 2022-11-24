@@ -197,3 +197,17 @@ h2:first-child {
   color: #fff;
   background-color: #000;
 }
+input{
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+}
+label{
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+h2{
+  font-weight: bold;
+  color: #fff;
+}
